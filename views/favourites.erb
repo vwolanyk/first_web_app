@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FAVS</title>
+  </head>
+  <body>
+    <h1 style = "background:rgba(122,31,240,0.98); font-size 25px; text-align: center;"> FAVOURITES</h1>
+    <br>
+    <br>
+    <% @fav_links.each do |link| %>
+    <a href="<%=link%>" style = "font-size:37px; color: cyan; text-decoration:none; text-shadow: 1px 1px black; margin: 40px;"> <%="#{File.basename(link)}"%> </a>
+    <br>
+    <br>
+    <% end %>
+  </body>
+</html>
