@@ -8,5 +8,20 @@
 
     <h1>All about Moi</h1>
 
+    <h2>SKILLZ</h2>
+    <ul style = "list-style-type: none; background-color:red;">
+      <%@skills.each do |skill| %>
+      <li style = "font-family: sans-serif; font-size:20px; text-transform: uppercase;"> &#x2694; <strong><%=skill%></strong> </li>
+      <%end%>
+    </ul>
+
+    <h2>INERESTING</h2>
+
+    <ul style = "list-style-type: none;background-color:purple;">
+      <% @interests.each do |interest| %>
+      <li style = "font-family: sans-serif; font-size:20px; text-transform: uppercase; "> 	&#128161; <strong ><%=interest%></strong></li>
+      <%end%>
+    </ul>
+
   </body>
 </html>
